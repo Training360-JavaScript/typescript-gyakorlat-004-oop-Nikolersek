@@ -1,5 +1,6 @@
 // Importáld be a HumanHero és TransformerHero osztályokat.
-
+import { HumanHero } from "./hero";
+import { TransformerHero } from "./transformer";
 
 /**
  * Állítsd be helyesen a változót!
@@ -8,7 +9,11 @@
  * Hozz létre benne 3 HumanHero példányt, szabadon választott adatokkal.
  * @var {HumanHero[]} humans
  */
-export const humans: any[] = [];
+export const humans: HumanHero[] = [
+    new HumanHero(1, "Superman", "male", 100, 5),
+    new HumanHero(2, "Batman", "male", 100, 2),
+    new HumanHero(3, "Agent Carter", "female", 101, 3)
+];
 
 /**
  * Állítsd be helyesen a változót!
@@ -17,4 +22,8 @@ export const humans: any[] = [];
  * Hozz létre benne 3 TransformerHero példányt, szabadon választott adatokkal.
  * @var {TransformerHero[]} transformers
  */
-export const transformers: any[] = [];
+export const transformers: TransformerHero[] = [
+    new TransformerHero(1, "blabla", 2, 3, "stb"),
+    new TransformerHero(1, "blabla", 2, 3, "stb"),
+    new TransformerHero(1, "blabla", 2, 3, "stb")
+];
